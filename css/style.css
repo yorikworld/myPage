@@ -1,0 +1,20 @@
+/*#navbarMenuBotton{*/
+    /*background: url("../img/0btbS.png") 100% 50% no-repeat;*/
+    /*background-size: cover;*/
+    /*height: 1px;*/
+/*}*/
+.content {
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+}
+.page-header {
+    margin: 0 0 20px;
+}
+
+.post-menu {
+    margin: 10px;
+    border-bottom: dotted 1px #DDD;
+}
+.post-menu-inner {
+    margin-bottom: 10px;
+}
