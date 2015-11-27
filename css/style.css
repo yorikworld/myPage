@@ -12,8 +12,18 @@
     font-family: Myriad Pro Regular;
     src:url(../fonts/MyriadProRegular.ttf);
 }
+body{
+    font: 14px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.navbar-default {
+    background-color: #466369;
+}
 
+/*.active > a {*/
+    /*background-color: #384D52;*/
+/*}*/
 #navbarMenuTop{
+    height: 74px;
     background: #466369;
     margin: -1px;
 }
@@ -67,10 +77,16 @@
 .vertLine{
     border-left: #ffffff solid 2px;
 }
-.main_item>a:hover{
-    background: #384D52;
+/*.main_item>a:hover{*/
+    /*background: #384D52;*/
+/*}*/
+#menu{
+    margin-top: 15px;
 }
-#menu .btn_login {
+#menu ul a{
+    padding: 10px 7px;
+}
+.btn_login {
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
     border-radius: 28px;
@@ -81,12 +97,12 @@
     text-decoration: none;
 }
 
-#menu .btn_login:hover {
+.btn_login:hover {
     background: #83d12a;
     text-decoration: none;
 }
 
-#menu .btn_account {
+.btn_account {
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
     border-radius: 28px;
@@ -97,24 +113,265 @@
     text-decoration: none;
 }
 
-#menu .btn_account:hover {
+.btn_account:hover {
     background: #4087eb;
     text-decoration: none;
 }
+/*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {*/
+    /*background: #384D52;*/
+/*}*/
 /*top menu end*/
 /*main container start*/
-.main_container{
-background-image: url("../img/Ingleside1.jpg") ;
+.main_container {
+    background-image: url("../img/Ingleside1.jpg");
     opacity: 0.5;
-    /*width: 100%;*/
-    height: 100%;
-    position: absolute;
-    /*left: 0;*/
-    /*top: 0;*/
+    /*height: 700px;*/
+    position: relative;
+    /*margin-right: 0;*/
+    left: 0;
+    top: 0;
     background-repeat: no-repeat;
-    background-position: center center!important;
-    background-size: cover!important;
-    -moz-background-size: cover!important;
-    -webkit-background-size: cover!important;
+    background-position: center center !important;
+    background-size: cover !important;
+    -moz-background-size: cover !important;
+    -webkit-background-size: cover !important;
+}
+.property_item{
+    /*background: url("../img/08917495.jpg");*/
+    /*height: 245px;*/
+    /*width: 350px;*/
 }
 /*main container end*/
+
+/*serch item end*/
+.main_search {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.search_item {
+    display: inline-block;
+    position: relative;
+}
+.bookmarks {
+    cursor: pointer;
+    position: absolute;
+    right: 0.8125rem;
+    top: 1.4375rem;
+}
+.search_item_photo {
+    bottom: 30%;
+    color: #FFF;
+    /*font-size: 0.75rem;*/
+    font-weight: 400;
+    line-height: 1rem;
+    margin: 0px;
+    /*padding: 0.1875rem 0.45rem;*/
+    position: absolute;
+    right: 85%;
+    text-shadow: 0px -0.0625rem 0px rgba(0, 0, 0, 0.35);
+}
+.search_item_description {
+    background: rgb(0, 0, 0) none repeat scroll 0% 0%;
+    bottom: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.59;
+    padding: 0.3rem 0.75rem;
+    position: absolute;
+    width: 100%;
+}
+.search_item_description_box_1 {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    text-align: left;
+}
+.search_item_description_box_1 .item_price {
+    color: #FFF;
+    /*font-size: 1rem;*/
+    font-weight: 400;
+    line-height: 1rem;
+    margin-bottom: 0;
+    text-shadow: 0px 0.0625rem 0px rgba(0, 0, 0, 0.5);
+}
+.search_item_description_box_1 .item_location {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.03125rem;
+    line-height: 14px;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+.item_location_box_2 {
+    display: block;
+}
+.search_item_description_box_2 {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    text-align: right;
+}
+.search_item_description_box_2 .item_title {
+    color: #FFF;
+    /*font-size: 1rem;*/
+    font-weight: 400;
+    line-height: 0.75rem;
+    margin-bottom: 0;
+    text-shadow: 0px 0.0625rem 0px rgba(0, 0, 0, 0.5);
+}
+.search_item_description_box_2 .item_details {
+    margin-bottom: 0;
+}
+.item_param_1 {
+    padding-right: 0.1875rem;
+    border-right: 0.0625rem solid rgb(210, 213, 214);
+}
+.search_item_description_box_2 .item_details .item_param_3 {
+    display: inline;
+}
+.search_item_description_box_2 .item_details .item_param_4 {
+    display: block;
+}
+.search_item .item_id {
+    display: block;
+    /*font-size: 0.53125rem;*/
+    font-weight: 400;
+    /*line-height: 0.53125rem;*/
+    /*margin-bottom: 0.5625rem;*/
+    text-transform: uppercase;
+}
+.icon_reciprocity {
+    background: url(../img/icon_reciprocity.png) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 13px;
+    margin-right: 2px;
+    width: 15px;
+}
+.badge {
+    background-color: #04bfde;
+    border-top-right-radius: 0.78125rem;
+    border-bottom-right-radius: 0.78125rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.24);
+    color: #fff;
+    /*font-size: 0.875rem;*/
+    font-weight: 400;
+    line-height: 1.142857142857143em;
+    padding: 0.46875rem 0.59375rem;
+    position: absolute;
+    text-transform: uppercase;
+}
+.round{
+    border-radius: 25%;
+    background-color: #2861ED;
+}
+.round i{
+    margin: 3px 5px;
+}
+.search_item a img{
+width: 100%;
+}
+/*serch item end*/
+
+@media (max-width: 991px){
+    .main_container{
+        height: 400px!important;
+    }
+    #menu{
+        background: #466369;
+    }
+}
+@media (max-width: 952px){
+    .btn_account{
+        margin-top: -15px;
+    }
+}
+@media (max-width: 1079px){
+    .btn_account{
+        margin-top: -15px;
+    }
+}
+@media (max-width: 1146px){
+    .nav.navbar-nav{
+        font-size: 12px;
+    }
+}
+/*TOP NAVIGATION START*/
+.navbar-default {
+    background-color: #466369;
+    border-color: #384d52;
+}
+.navbar-default .navbar-brand {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #ffbbbc;
+}
+.navbar-default .navbar-text {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ecdbff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #384d52;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #ecdbff;
+    background-color: #384d52;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+    background-color: #466369;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #ecdbff;
+    background-color: #384d52;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #ecdbff;
+    background-color: #384d52;
+}
+.navbar-default .navbar-toggle {
+    border-color: #384d52;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #384d52;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+    color: #ffbbbc;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffbbbc;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffbbbc;
+        background-color: #384d52;
+    }
+}
+/*TOP NAVIGATION END*/
