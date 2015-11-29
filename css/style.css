@@ -15,6 +15,9 @@
 body{
     font: 14px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+#footer{
+    position: relative;
+}
 .navbar-default {
     background-color: #466369;
 }
@@ -280,6 +283,15 @@ width: 100%;
 @media (max-width: 991px){
     .main_container{
         height: 400px!important;
+        position: relative!important;
+        width: 100%!important;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .left_side{
+        padding: 0 0 15px 0;
+        top:-1px;
     }
     #menu{
         background: #466369;
