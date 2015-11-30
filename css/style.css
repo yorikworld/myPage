@@ -15,6 +15,10 @@
 body{
     font: 14px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
 #footer{
     position: relative;
 }
@@ -125,11 +129,17 @@ body{
 /*}*/
 /*top menu end*/
 /*main container start*/
+.main_row{
+    padding-top: 74px
+}
 .main_container {
+    position: fixed;
+    width:60%;
+    height: 100%;
     background-image: url("../img/Ingleside1.jpg");
     opacity: 0.5;
     /*height: 700px;*/
-    position: relative;
+    /*position: relative;*/
     /*margin-right: 0;*/
     left: 0;
     top: 0;
@@ -140,9 +150,8 @@ body{
     -webkit-background-size: cover !important;
 }
 .property_item{
-    /*background: url("../img/08917495.jpg");*/
-    /*height: 245px;*/
-    /*width: 350px;*/
+    position: relative;
+    padding-bottom: 15px;
 }
 /*main container end*/
 
@@ -164,6 +173,8 @@ body{
     top: 1.4375rem;
 }
 .search_item_photo {
+    z-index: 1;
+    position: absolute;
     bottom: 30%;
     color: #FFF;
     /*font-size: 0.75rem;*/
@@ -270,7 +281,7 @@ body{
 }
 .round{
     border-radius: 25%;
-    background-color: #2861ED;
+    background-color: #708e94;
 }
 .round i{
     margin: 3px 5px;
@@ -279,8 +290,72 @@ body{
 width: 100%;
 }
 /*serch item end*/
+/*serch input start*/
+.search_form{
+    z-index: 1;
+    margin-left: 7%;
+    position: fixed;
+    top: 250px;
+    width: 40%;
+    background: #466369;
+    border-bottom: 0.0625rem solid #869da1;
+    padding: 2.28125rem 2rem 2rem;
+    border-radius: 10px;
+}
+.search_form .select_search{
+    margin: -9px 0px 10px 0px;
+}
+.select_search .left1{
+    float: left;
+}
+.select_search .right{
+    float: right;
+}
+.left1 a, .right a, .refine a{
+    color: white !important;
+}
+#search_form_res input[type=text]{
+    box-shadow: none;
+    height: 41px;
+    border-width: 0 0 0 1px;
+    border-color: #ccc;
+    border-style: solid;
+    font-size: .85rem;
+    border-left: none;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+#search_form_res2 input[type=text]{
+    box-shadow: none;
+    height: 41px;
+    border-width: 0 0 0 1px;
+    border-color: #ccc;
+    border-style: solid;
+    font-size: .85rem;
+    border-left: none;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.refine{
+    float: right;
+}
+.hide{
+    display: none!important;
+}
+.hmSearFid{
+    width:100%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+/*serch input end*/
 
 @media (max-width: 991px){
+    .search_form{
+        position: relative;
+        top:-260px;
+        margin-left: 30%;
+        width: 50%;
+    }
     .main_container{
         height: 400px!important;
         position: relative!important;
@@ -290,11 +365,17 @@ width: 100%;
         padding: 0;
     }
     .left_side{
-        padding: 0 0 15px 0;
+        /*padding: 0 0 15px 0;*/
         top:-1px;
+    }
+    .right_side{
+
     }
     #menu{
         background: #466369;
+    }
+    .vertLine{
+        border-left: hidden;
     }
 }
 @media (max-width: 952px){
@@ -302,7 +383,7 @@ width: 100%;
         margin-top: -15px;
     }
 }
-@media (max-width: 1079px){
+@media (max-width: 1049px){
     .btn_account{
         margin-top: -15px;
     }
@@ -310,6 +391,31 @@ width: 100%;
 @media (max-width: 1146px){
     .nav.navbar-nav{
         font-size: 12px;
+    }
+}
+@media (max-width: 1656px){
+    .search_item_photo{
+        bottom: 40%;
+    }
+}
+@media (max-width: 1480px){
+    .search_item_photo{
+        bottom: 50%;
+    }
+}
+@media (max-width: 1346px){
+    .search_item_photo{
+        bottom: 60%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1232px){
+    .search_item_photo{
+        bottom: 70%;
+    }
+}
+@media (max-width: 1199px){
+    .search_item_photo{
+        bottom: 25%;
     }
 }
 /*TOP NAVIGATION START*/
