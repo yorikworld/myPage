@@ -49,7 +49,7 @@ body{
 .post-menu-inner {
     margin-bottom: 10px;
 }
-/*logo start*/
+/**************************logo start**************************/
 .property_logo {
     font-family: Elephant Regular;
     color: white !important;
@@ -79,8 +79,8 @@ body{
 .logo_txt {
     max-width: 185px;
 }
-/*logo end*/
-/*top menu start*/
+/**************************logo end**************************/
+/**************************top menu start**************************/
 .vertLine{
     border-left: #ffffff solid 2px;
 }
@@ -127,8 +127,8 @@ body{
 /*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {*/
     /*background: #384D52;*/
 /*}*/
-/*top menu end*/
-/*main container start*/
+/**************************top menu end**************************/
+/**************************main container start**************************/
 .main_row{
     padding-top: 74px
 }
@@ -153,9 +153,9 @@ body{
     position: relative;
     padding-bottom: 15px;
 }
-/*main container end*/
+/**************************main container end**************************/
 
-/*serch item end*/
+/**************************serch item end**************************/
 .main_search {
     padding-left: 0;
     padding-right: 0;
@@ -289,8 +289,8 @@ body{
 .search_item a img{
 width: 100%;
 }
-/*serch item end*/
-/*serch input start*/
+/**************************serch item end**************************/
+/**************************serch input start**************************/
 .search_form{
     z-index: 1;
     margin-left: 7%;
@@ -347,7 +347,7 @@ width: 100%;
     border-radius: 10px;
     padding-left: 10px;
 }
-/*serch input end*/
+/**************************serch input end**************************/
 
 @media (max-width: 991px){
     .search_form{
@@ -418,7 +418,7 @@ width: 100%;
         bottom: 25%;
     }
 }
-/*TOP NAVIGATION START*/
+/**************************TOP NAVIGATION START**************************/
 .navbar-default {
     background-color: #466369;
     border-color: #384d52;
@@ -492,4 +492,4 @@ width: 100%;
         background-color: #384d52;
     }
 }
-/*TOP NAVIGATION END*/
+/**************************TOP NAVIGATION END**************************/

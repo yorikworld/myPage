@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">                                                                <!-- Определение языка страницы -->
+<head>
+    <meta charset="utf-8">                                                      <!-- Определение кодировки -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                       <!-- Поддержка в максимально старшей версии браузера IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">        <!-- Определение области просмотра для мобильных устройств -->
+    <title>Базовый шаблон Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+        .logo {
+            background-color: #466369;
+        }
+
+        .menu {
+            /*background-color: fuchsia;*/
+            max-height: 20px;
+        }
+
+        .but {
+            background-color: hotpink;
+        }
+
+        .filter {
+            background-color: #466369;
+            height: 600px;
+
+        }
+        .panel-title {
+            color: white;
+        }
+
+
+
+        .items {
+            /*background-color: rebeccapurple;*/
+            overflow-y:scroll;
+            height: 600px;
+        }
+
+        .row .description {
+            background-color: #5bc0de;
+        }
+
+        .row .item {
+            background-color: rebeccapurple;
+        }
+
+        .map {
+            background-color: lawngreen;
+            height: 600px;
+        }
+
+        .row.footer {
+            background-color: green;
+            /*max-height: 300px;*/
+        }
+
+        .row.content {
+            max-height: 600px;
+        }
+
+        .property_logo {
+            font-family: Elephant Regular;
+            color: white !important;
+        }
+
+        .u_logo {
+            color: #FF7A00 !important;
+            font-family: Lucida Handwriting Italic;
+        }
+
+        .property_logo1 {
+            font-family: Elephant Regular;
+            color: white !important;
+        }
+
+        .logo_box_2 {
+            /*color: orange !important;*/
+            color: white !important;
+            font-family: Myriad Pro Regular !important;
+        }
+
+        .bs-example {
+            margin-left: -14px;
+            margin-right: -14px;
+            background-color: #466369;
+        }
+        .panel.panel-default {
+            border-radius: 0px;
+            margin-bottom: -6px;
+            background-color: #466369;
+        }
+        .panel-heading {
+            background-color: #466369 !important;
+        }
+
+
+        .logo .logo {
+            min-width: 310px;
+        }
+
+        /*@media (min-width: 1116px) and (max-width: 1421px) {*/
+
+            /*.property_logo, .u_logo, .property_logo1 {*/
+                /*font-size: 27px;*/
+            /*}*/
+
+            /*.logo_box_2 {*/
+                /*font-size: 0.83em !important;*/
+                /*margin-top: 2px;*/
+            /*}*/
+        /*}*/
+
+        /*@media (min-width: 1105px) and (max-width: 1116px) {*/
+            /*.property_logo, .u_logo, .property_logo1 {*/
+                /*font-size: 27px;*/
+            /*}*/
+
+            /*.logo_box_2 {*/
+                /*font-size: 0.80em !important;*/
+                /*margin-top: 2px;*/
+            /*}*/
+        /*}*/
+
+        /*@media (min-width: 900px) and (max-width: 1105px) {*/
+            /*.property_logo, .u_logo, .property_logo1 {*/
+                /*font-size: 25px;*/
+            /*}*/
+
+            /*.logo_box_2 {*/
+                /*font-size: 0.79em !important;*/
+                /*margin-top: 2px;*/
+            /*}*/
+        /*}*/
+
+        @media (min-width: 400px) and (max-width: 2000px)  {
+
+            .logo .logo {
+                max-width: 250px;
+            }
+
+            .logo, .filter{
+                min-width: 235px;
+                max-width: 280px;
+            }
+
+            .property_logo, .u_logo, .property_logo1 {
+                /*font-size: 35px;*/
+            }
+
+            .logo_box_2 {
+                /*font-size: 15.2px !important;*/
+                margin-top: 2px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 2000px) {
+            .row .item, .description {
+                height: 170px;
+            }
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+            .row .item {
+                height: 175px;
+            }
+
+            .row .description {
+                position: absolute;
+                height: 60px;
+                margin-top: 115px;
+            }
+
+            .buttons {
+                float: right;
+            }
+        }
+
+
+        @font-face {
+            font-family: Elephant Regular;
+            src:url(fonts/ELEPHNT.TTF);
+        }
+        @font-face {
+            font-family: Lucida Handwriting Italic;
+            src:url(fonts/lucida-handwriting-italic.ttf);
+        }
+        @font-face {
+            font-family: Myriad Pro Regular;
+            src:url(fonts/MyriadProRegular.ttf);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav id="navbarMenuTop" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-md-2 col-lg-2">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                            <span class="sr-only"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo_txt">
+                    <span class="logo_box_1">
+                        <span class="property_logo">Property</span><span class="u_logo">U</span><span class="property_logo1" style="">p</span>
+                    </span>
+                            <span class="logo_box_2">TRUSTED REAL ESTATE ADVISOR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-lg-10">
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="nav navbar-nav">
+                            <li class="main_item dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">Search for Sale</a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item dropdown dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Existing Homes New Search</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois Homes for Sale</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois Residential Homes for Sale</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois Foreclosed Homes for Sale</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois Condos for Sale</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois Lots & Lands for Sale</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois New Homes for Sale</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois Townhouses for Sale</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois Multi-Family Homes for Sale</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago,illinois Commercial Real Estate for Sale</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="vertLine"><a href="#">Search for Rent</a></li>
+                            <li class="vertLine"><a href="#">Search Commercial</a></li>
+                            <li class="vertLine"><a href="#">Search Recent Sales</a></li>
+                            <li class="vertLine"><a href="#">Search by Schools</a></li>
+                        </ul>
+                        <div class="menu_buttons">
+                            <a href="#" class="btn_account pull-right">Create account</a>
+                            <a href="#" class="btn_login pull-right">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+    <div class="row content">
+
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2  filter">
+            <div class="bs-example">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Property Type<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Price Range<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Bedrooms<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree1">Bathrooms <span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree2">Garage<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree3">Year Build<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree4">Square Feet<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree5">Lot Size<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree6">Change Subdivision<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree7">Change Neighborhoods<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree8">Elementary Schools<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree8" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree9">Middle Schools<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree9" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree10">High Schools<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree10" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree11">Change Location<span class="caret"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree11" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class=" col-xs-6 col-sm-6 col-md-5 col-lg-5 items">
+            <div class="row border">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item">item 1
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue magna, </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item">item 2
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue magna, </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item">item 3
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue magna, </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item">item 4
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue magna, </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item">item 5
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue magna, </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item">item 6
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue magna, </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item">item 7
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue magna, </div>
+            </div>
+
+
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5 map">
+            maps items
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row footer">
+        <div class="col-md-12">
+
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue magna, elementum in ipsum at, congue vehicula tortor. Morbi cursus tellus et accumsan ultrices. Vestibulum maximus pulvinar nunc et condimentum. Donec fermentum sollicitudin vulputate. Praesent in risus vitae libero viverra venenatis id in velit. Sed diam neque, consequat nec eros ut, rhoncus mattis dui. Phasellus porta purus a lacus fringilla vestibulum. Morbi fermentum feugiat commodo. Cras ultricies finibus diam, scelerisque auctor massa auctor elementum. Duis interdum ante vitae massa malesuada tempus.
+
+            Integer et semper lectus, et dignissim metus. Nulla facilisi. Cras facilisis ipsum elit, vel semper risus aliquet non. Donec eleifend est eget nibh vestibulum mollis. Mauris maximus tortor ac tellus accumsan, vel convallis sem elementum. Proin quis nunc accumsan, bibendum tellus eu, tristique augue. Etiam pharetra neque ipsum, a venenatis magna iaculis nec. Sed tristique ultrices consectetur. Donec rutrum sem suscipit nisl molestie, at congue sem vulputate. Suspendisse nec justo dolor. Morbi id pulvinar augue, et viverra massa. Cras velit ex, dictum quis eleifend non, sollicitudin quis erat.
+
+            Quisque facilisis tincidunt iaculis. Aliquam maximus congue consequat. In hac habitasse platea dictumst. Donec quis facilisis velit. Nunc venenatis tincidunt tristique. Proin lectus sapien, commodo ut venenatis vel, posuere at erat. Nam eleifend tortor dui, eu pharetra augue sollicitudin vel. In a massa ultricies dui pulvinar blandit. Aenean eget nisi vitae est fringilla malesuada vel eget lacus. Pellentesque convallis lacinia velit, et ornare nulla. Nulla cursus risus ac euismod luctus. Maecenas consectetur turpis turpis, tempus congue justo aliquam facilisis.
+
+            Quisque ligula ipsum, egestas sed auctor at, convallis non purus. Aliquam erat volutpat. Ut eget lorem et velit lacinia porttitor cursus id dolor. Mauris metus dui, iaculis eu dignissim vel, consectetur ut metus. In ornare non ante sed suscipit. Vivamus facilisis sodales massa, ut mattis risus lacinia ac. Pellentesque in risus sit amet ligula rhoncus imperdiet.
+
+            Integer sed diam egestas, volutpat eros id, tempus ipsum. Fusce semper justo sit amet massa maximus, eu fermentum ante scelerisque. Duis laoreet orci et est finibus, a consectetur lacus interdum. Sed laoreet volutpat luctus. Praesent hendrerit molestie ligula eget placerat. Vestibulum consequat faucibus tortor eget euismod. Donec ut ultricies quam. Cras at mi ipsum.
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
