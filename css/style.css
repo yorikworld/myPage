@@ -136,7 +136,7 @@ body{
     position: fixed;
     width:60%;
     height: 100%;
-    background-image: url("../img/Ingleside1.jpg");
+    background-image: url(../img/Ingleside1.jpg);
     opacity: 0.5;
     /*height: 700px;*/
     /*position: relative;*/
@@ -182,7 +182,6 @@ body{
     line-height: 1rem;
     margin: 0px;
     /*padding: 0.1875rem 0.45rem;*/
-    position: absolute;
     right: 85%;
     text-shadow: 0px -0.0625rem 0px rgba(0, 0, 0, 0.35);
 }
@@ -493,3 +492,74 @@ width: 100%;
     }
 }
 /**************************TOP NAVIGATION END**************************/
+/**************************Properties listing page start **************************/
+.main-content{
+
+}
+.chatbox{
+    color: white;
+    min-height: 72px;
+    margin-top: 72px;
+    background: rgb(107, 137, 143) none repeat scroll 0% 0%;
+}
+.chatbox a{
+    color: white;
+}
+.sort{
+    padding-right: 40px;
+}
+.item-image{
+    background: url(../img/icon_reciprocity.png) no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+.item-set{
+    margin-bottom: 15px;
+    color: #4052C1;
+}
+.listing_item_photo {
+    z-index: 1;
+    position: absolute;
+    bottom: 5%;
+    color: #FFF;
+    /*font-size: 0.75rem;*/
+    font-weight: 400;
+    line-height: 1rem;
+    margin: 0px;
+    /*padding: 0.1875rem 0.45rem;*/
+    right: 85%;
+    text-shadow: 0px -0.0625rem 0px rgba(0, 0, 0, 0.35);
+}
+.pic{
+    /*position: absolute;*/
+    /*bottom: 10%;*/
+    /*left: 10%;*/
+}
+.price{
+    color: gray;
+    font-size: 17px;
+}
+.mls{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+.view_details_btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.show_more_btn{
+    font-size: 14px;
+}
+@media (max-width: 1400px) {
+    .listing_item_photo{
+        right: 80%;
+    }
+}
+@media (max-width: 992px) {
+    .listing_item_photo{
+        right: 75%;
+    }
+}
+/**************************Properties listing page end **************************/
