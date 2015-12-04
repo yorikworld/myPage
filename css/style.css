@@ -14,6 +14,7 @@
 }
 body{
     font: 14px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    overflow-x: hidden;
 }
 .container-fluid{
     padding-left: 0;
@@ -111,6 +112,37 @@ body{
     text-decoration: none;
 }
 
+.btn_details a {
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 12px;
+    background: #8cd934;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+}
+
+.btn_details a:hover {
+    background: #83d12a;
+    text-decoration: none;
+}
+.btn_show_more {
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    color: #ffffff;
+    /*font-size: 12px;*/
+    background: #4791ff;
+    padding: 10px 50px 10px 50px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn_show_more:hover {
+    background: #4087eb;
+    text-decoration: none;
+}
 .btn_account {
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
@@ -302,7 +334,7 @@ width: 100%;
 }
 .right_side{
     padding-right: 0;
-    height: 1500px;
+    min-height: 1000px;
 }
 /**************************serch item end**************************/
 /**************************serch input start**************************/
@@ -395,7 +427,7 @@ width: 100%;
         border-left: hidden;
     }
     .btn_account{
-        padding: 10px 70px 10px 70px;
+        padding: 10px 69px 10px 69px;
         margin-bottom: 10px;
     }
     .btn_login{
@@ -414,7 +446,7 @@ width: 100%;
         /*margin-top: -15px;*/
     /*}*/
 }
-@media (min-width: 1036px){
+@media (min-width: 1057px){
     .menu_buttons{
         margin-top: 15px;
     }
@@ -455,6 +487,9 @@ width: 100%;
     }
     .main_container{
         width: 69%;
+    }
+    .btn_details a{
+        padding: 10px 20px 10px 20px;
     }
 }
 /**************************TOP NAVIGATION START**************************/
@@ -547,6 +582,7 @@ width: 100%;
 }
 .sort{
     padding-right: 40px;
+    margin-top: 34px;
 }
 .item-image{
     background: url(../img/icon_reciprocity.png) no-repeat;
@@ -589,9 +625,6 @@ width: 100%;
     bottom: 0;
     right: 0;
 }
-.show_more_btn{
-    font-size: 14px;
-}
 .take{
     float: left;
     /*width: 235px;*/
@@ -602,6 +635,10 @@ width: 100%;
 }
 .container{
     margin: 0;
+}
+.item-holder{
+    position: relative;
+    margin-bottom: 15px;
 }
 @media (max-width: 1400px) {
     .listing_item_photo{
@@ -615,9 +652,29 @@ width: 100%;
     .content{
         width: 100%;
     }
+    .updated{
+        font-size: 10px ;
+    }
+}
+@media (max-width: 1100px) {
+    .updated{
+        font-size: 10px;
+        right: -122px!important;
+    }
 }
 .panel.panel-default{
     width: 220px;
+}
+.btn_details{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.updated{
+    position: absolute;
+    right: -155px;
+    bottom: 8px;
+    color: #333;
 }
 /**************************Properties listing page end **************************/
 /**************************footer start **************************/
