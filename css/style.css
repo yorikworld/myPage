@@ -21,6 +21,7 @@ body{
 }
 #footer{
     position: relative;
+    overflow-x: hidden;
 }
 .navbar-default {
     background-color: #466369;
@@ -30,7 +31,7 @@ body{
     /*background-color: #384D52;*/
 /*}*/
 #navbarMenuTop{
-    height: 74px;
+    height: 72px;
     background: #466369;
     margin: -1px;
 }
@@ -48,6 +49,13 @@ body{
 }
 .post-menu-inner {
     margin-bottom: 10px;
+}
+.left_side{
+    /*background: url(../img/Ingleside1.jpg) no-repeat center center fixed;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
 }
 /**************************logo start**************************/
 .property_logo {
@@ -84,12 +92,6 @@ body{
 .vertLine{
     border-left: #ffffff solid 2px;
 }
-/*.main_item>a:hover{*/
-    /*background: #384D52;*/
-/*}*/
-#menu{
-    margin-top: 15px;
-}
 #menu ul a{
     padding: 10px 7px;
 }
@@ -100,7 +102,7 @@ body{
     color: #ffffff;
     font-size: 12px;
     background: #8cd934;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 56px 10px 55px;
     text-decoration: none;
 }
 
@@ -116,7 +118,7 @@ body{
     color: #ffffff;
     font-size: 12px;
     background: #4791ff;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 30px 10px 30px;
     text-decoration: none;
 }
 
@@ -124,9 +126,9 @@ body{
     background: #4087eb;
     text-decoration: none;
 }
-/*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {*/
-    /*background: #384D52;*/
-/*}*/
+.nav.navbar-nav{
+    margin-top: 15px;
+}
 /**************************top menu end**************************/
 /**************************main container start**************************/
 .main_row{
@@ -149,13 +151,16 @@ body{
     -moz-background-size: cover !important;
     -webkit-background-size: cover !important;
 }
+.brand{
+    bottom: 0;
+}
 .property_item{
     position: relative;
     padding-bottom: 15px;
 }
 /**************************main container end**************************/
 
-/**************************serch item end**************************/
+/**************************serch item start**************************/
 .main_search {
     padding-left: 0;
     padding-right: 0;
@@ -288,6 +293,17 @@ body{
 .search_item a img{
 width: 100%;
 }
+.item{
+    padding: 0;
+}
+.item_pad{
+    padding-left: 12px;
+    padding-right: 0px;
+}
+.right_side{
+    padding-right: 0;
+    height: 1500px;
+}
 /**************************serch item end**************************/
 /**************************serch input start**************************/
 .search_form{
@@ -354,6 +370,7 @@ width: 100%;
         top:-260px;
         margin-left: 30%;
         width: 50%;
+        padding: 2.28125rem 2rem 3rem;
     }
     .main_container{
         height: 400px!important;
@@ -364,27 +381,47 @@ width: 100%;
         padding: 0;
     }
     .left_side{
-        /*padding: 0 0 15px 0;*/
+        padding: 0 0 15px 0;
         top:-1px;
-    }
-    .right_side{
-
+        height: 405px;
     }
     #menu{
         background: #466369;
+        float: right !important;
+        overflow: hidden;
+        width: 250px;
     }
     .vertLine{
         border-left: hidden;
     }
+    .btn_account{
+        padding: 10px 70px 10px 70px;
+        margin-bottom: 10px;
+    }
+    .btn_login{
+        padding: 10px 96px 10px 95px;
+        margin-bottom: 10px;
+    }
+    .nav.navbar-nav li{
+        border-bottom: 1px solid #71868a;
+    }
+    .mobile_menu{
+        padding-right: 0;
+    }
 }
 @media (max-width: 952px){
-    .btn_account{
-        margin-top: -15px;
+    /*.btn_account{*/
+        /*margin-top: -15px;*/
+    /*}*/
+}
+@media (min-width: 1036px){
+    .menu_buttons{
+        margin-top: 15px;
     }
 }
 @media (max-width: 1049px){
     .btn_account{
-        margin-top: -15px;
+        /*margin-top: -15px;*/
     }
 }
 @media (max-width: 1146px){
@@ -394,27 +431,30 @@ width: 100%;
 }
 @media (max-width: 1656px){
     .search_item_photo{
-        bottom: 40%;
+        bottom: 30%;
     }
 }
 @media (max-width: 1480px){
     .search_item_photo{
-        bottom: 50%;
+        bottom: 40%;
     }
 }
 @media (max-width: 1346px){
     .search_item_photo{
-        bottom: 60%;
+        bottom: 50%;
     }
 }
 @media (min-width: 1200px) and (max-width: 1232px){
     .search_item_photo{
-        bottom: 70%;
+        bottom: 50%;
     }
 }
 @media (max-width: 1199px){
     .search_item_photo{
         bottom: 25%;
+    }
+    .main_container{
+        width: 69%;
     }
 }
 /**************************TOP NAVIGATION START**************************/
@@ -552,6 +592,17 @@ width: 100%;
 .show_more_btn{
     font-size: 14px;
 }
+.take{
+    float: left;
+    /*width: 235px;*/
+}
+.fill{
+    width: calc(100% - 235px + 33px * 2);
+    float: left;
+}
+.container{
+    margin: 0;
+}
 @media (max-width: 1400px) {
     .listing_item_photo{
         right: 80%;
@@ -561,5 +612,26 @@ width: 100%;
     .listing_item_photo{
         right: 75%;
     }
+    .content{
+        width: 100%;
+    }
+}
+.panel.panel-default{
+    width: 220px;
 }
 /**************************Properties listing page end **************************/
+/**************************footer start **************************/
+/*.seven-cols{*/
+    /*width: 14.285714285714285714285714285714%;;*/
+/*}*/
+@media (min-width: 1200px) {
+    .seven-cols .col-md-1, .seven-cols .col-sm-1, .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
+    }
+}
+@media (min-width: 992px) {
+    .row.footer {
+        margin-top: 15px;
+    }
+}
+/**************************footer end **************************/

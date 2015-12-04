@@ -1,0 +1,67 @@
+**********************Изменено:
+
+.left_side{
+        padding: 0 0 15px 0;
+        top:-1px;
+        height: 405px;
+    }
+@media (max-width: 991px){
+    .search_form{
+        position: relative;
+        top:-260px;
+        margin-left: 30%;
+        width: 50%;
+        padding: 2.28125rem 2rem 3rem;
+    }
+    .btn_account{
+        padding: 10px 75px 10px 65px;
+        margin-bottom: 10px;
+    }
+    .btn_login{
+        padding: 10px 100px 10px 91px;
+    }
+    .nav.navbar-nav li{
+        border-bottom: 1px solid #71868a;
+    }
+}
+@media (max-width: 1656px){
+    .search_item_photo{
+        bottom: 30%;
+    }
+}
+@media (max-width: 1480px){
+    .search_item_photo{
+        bottom: 40%;
+    }
+}
+@media (max-width: 1346px){
+    .search_item_photo{
+        bottom: 50%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1232px){
+    .search_item_photo{
+        bottom: 50%;
+    }
+}
+@media (max-width: 1199px){
+    .search_item_photo{
+        bottom: 25%;
+    }
+    .main_container{
+        width: 69%;
+    }
+}
+*****************Добавленно новое:
+
+.item{
+    padding: 0;
+}
+.item_pad{
+    padding-left: 12px;
+    padding-right: 0px;
+}
+.right_side{
+    padding-right: 0;
+}
+
