@@ -682,7 +682,10 @@ width: 100%;
     .buttons_side{
         position: fixed;
         z-index: 16;
-        bottom: -35px
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
     }
 }
 @media (max-width: 1100px) {
